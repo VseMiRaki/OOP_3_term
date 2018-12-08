@@ -189,7 +189,7 @@ struct HalfEdge {
 
     int begin, end;
     std::shared_ptr<HalfEdge<TScalar>> twin, next, prev;
-
+    
 
     bool used;
 };
@@ -913,7 +913,6 @@ int main() {
     std::vector<CPoint<long double>> points;
     CPoint<long double> Point;
     while (std::cin >> Point.y) {
-        if (Point.y == -100) break;
         std::cin >> Point.x;
         points.push_back(Point);
     }
